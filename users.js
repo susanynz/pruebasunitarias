@@ -1,19 +1,28 @@
-// Imports small array of users
-// Pretend it's an API request
-const users = require('./data');
+const users = [
+    {
+        id: 1,
+        username: "hpLover4",
+        email: "sirious90@gmail.com",
+        password: "hArrydotCo9m"
+    },
+    {
+        id: 2,
+        username: "piderman",
+        email: "parkerdapete@gmail.com",
+        password: "2D$aLzX9(_2"
+    },
+    {
+        id: 3,
+        username: "goosemotionless",
+        email: "dotmeheart@outlook.com",
+        password: "12345abcde"
+    },
+    {
+        id: 4,
+        username: "unsurejudy",
+        email: "babariley77@gmail.com",
+        password: "Kashmir1970"
+    }
+]
 
-// Fetches all users
-const getUsers = () => {
-    return users;
-}
-
-// Filters users by specific ID
-const getUser = id => {
-    return users.find(user => user.id === id)
-}
-
-
-// test
-// console.log(getUser(3));
-
-module.exports = {getUsers , getUser};
+module.exports = users;

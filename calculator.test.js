@@ -1,6 +1,6 @@
 const { default: expect } = require('expect');
 
-const calculator = require('../calculator');
+const calculator = require('./calculator');
 
 test('adds a + b', () => {
     //
